@@ -1,0 +1,1 @@
+Write namespace.yaml here: creates the mini-mesh namespace with the istio-injection=enabled label.

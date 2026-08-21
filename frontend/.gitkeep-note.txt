@@ -1,0 +1,3 @@
+Write your Dockerfile here: frontend/Dockerfile (multi-stage: node build stage -> nginx runtime stage)
+Write your .dockerignore here: frontend/.dockerignore
+Your entrypoint should envsubst public/config.template.js -> config.js at container startup (see that file's comments).

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini-Mesh</title>
+    <!--
+      Loaded BEFORE the app bundle, and deliberately NOT bundled by Vite.
+      This is what lets one built Docker image run against different
+      backend URLs in different environments (local / minikube / etc.)
+      without a rebuild: your container entrypoint generates this file
+      from config.template.js by substituting the GREETING_SERVICE_URL
+      env var at container startup, then nginx serves it as a static file.
+      See frontend/public/config.template.js for the placeholder.
+    -->
+    <script src="/config.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  greeting-service:
+    build: services/greeting-service
+    ports:
+      - "8080:8080"
+    environment:
+      - GREETING_MESSAGE=Hello, World!
+      - USER_SERVICE_URL=http://user-service:8081
+  
+  user-service:
+    build: services/user-service
+    ports:
+      - "8081:8081"
+    environment:
+      - NOTIFICATION_SERVICE_URL=http://notification-service:8000
+
+  notification-service:
+    build: services/notification-service
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - GREETING_SERVICE_URL=http://localhost:8080
+      - NOTIFICATION_SERVICE_URL=http://localhost:8000

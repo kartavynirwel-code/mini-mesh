@@ -1,0 +1,17 @@
+# Java / Maven
+target/
+*.class
+
+# Node / Vite
+node_modules/
+dist/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,2 @@
+Write your Dockerfile here: services/user-service/Dockerfile (multi-stage: Maven build stage -> JRE runtime stage)
+Write your .dockerignore here: services/user-service/.dockerignore

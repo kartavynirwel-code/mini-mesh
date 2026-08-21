@@ -1,0 +1,2 @@
+Write your ConfigMap YAMLs here, e.g. greeting-service-config.yaml with USER_SERVICE_URL,
+user-service-config.yaml with NOTIFICATION_SERVICE_URL, frontend-config.yaml with GREETING_SERVICE_URL.

@@ -1,0 +1,2 @@
+Write here: peer-authentication.yaml (STRICT mTLS for the mini-mesh namespace),
+greeting-service-virtualservice.yaml, greeting-service-destinationrule.yaml.

@@ -1,0 +1,2 @@
+Write deployment.yaml, service.yaml, and ingress.yaml (or NodePort service) here for the frontend.
+Needs env var GREETING_SERVICE_URL consumed by your entrypoint script (see frontend/public/config.template.js).

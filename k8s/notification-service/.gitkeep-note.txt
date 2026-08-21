@@ -1,0 +1,1 @@
+Write deployment.yaml and service.yaml here for notification-service (ClusterIP, port 8000).

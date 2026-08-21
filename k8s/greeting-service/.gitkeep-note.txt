@@ -1,0 +1,2 @@
+Write deployment.yaml and service.yaml here for greeting-service (ClusterIP, port 8080).
+Needs env var USER_SERVICE_URL, liveness/readiness probes on /actuator/health.

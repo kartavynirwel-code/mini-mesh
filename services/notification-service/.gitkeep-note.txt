@@ -1,0 +1,3 @@
+Write your Dockerfile here: services/notification-service/Dockerfile
+Write your .dockerignore here: services/notification-service/.dockerignore
+See the checklist for this service in the chat conversation / README.md.
