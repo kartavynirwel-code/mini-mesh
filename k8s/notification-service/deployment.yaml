@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: notification-service-deployment
+  labels:
+    app: notification-service-pod
+spec:
+  selector:
+    matchLabels:
+      app: notification-service-pod
+  template:
+    metadata:
+      labels:
+        app: notification-service-pod
+    spec:
+      containers:
+      - name: notification-service
+        image: mini-mesh-notification-service:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+        ports:
+        - containerPort: 8000
