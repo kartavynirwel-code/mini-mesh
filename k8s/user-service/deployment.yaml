@@ -20,7 +20,7 @@ spec:
         - name: NOTIFICATION_SERVICE_URL
           valueFrom:
             secretKeyRef:
-              name: notification-service-secret
+              name: mini-mesh-secrets
               key: ${NOTIFICATION_SERVICE_URL}
         resources:
           limits:
