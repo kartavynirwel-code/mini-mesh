@@ -21,7 +21,7 @@ spec:
           valueFrom:
             secretKeyRef:
               name: mini-mesh-secrets
-              key: ${NOTIFICATION_SERVICE_URL}
+              key: NOTIFICATION_SERVICE_URL
         resources:
           limits:
             memory: "128Mi"

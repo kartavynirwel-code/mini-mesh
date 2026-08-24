@@ -22,7 +22,7 @@ spec:
           valueFrom:
             secretKeyRef:
               name: mini-mesh-secrets
-              key: ${GREETING_SERVICE_URL}
+              key: GREETING_SERVICE_URL
         ports:
         - containerPort: 80
         resources:

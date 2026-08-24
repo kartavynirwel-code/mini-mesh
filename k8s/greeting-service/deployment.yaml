@@ -21,12 +21,12 @@ spec:
           valueFrom:
             secretKeyRef:
               name: mini-mesh-secrets
-              key: ${GREETING_MESSAGE}
+              key: GREETING_MESSAGE
         - name: USER_SERVICE_URL
           valueFrom:
             secretKeyRef:
               name: mini-mesh-secrets
-              key: ${USER_SERVICE_URL}
+              key: USER_SERVICE_URL
         resources:
           limits:
             memory: "128Mi"
