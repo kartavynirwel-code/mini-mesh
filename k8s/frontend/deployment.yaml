@@ -17,6 +17,7 @@ spec:
       containers:
       - name: frontend
         image: mini-mesh-frontend:latest
+        imagePullPolicy: IfNotPresent
         env:
         - name: GREETING_SERVICE_URL
           valueFrom:

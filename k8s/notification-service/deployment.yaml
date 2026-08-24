@@ -16,6 +16,7 @@ spec:
       containers:
       - name: notification-service
         image: mini-mesh-notification-service:latest
+        imagePullPolicy: IfNotPresent
         resources:
           limits:
             memory: "128Mi"

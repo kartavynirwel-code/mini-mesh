@@ -16,6 +16,7 @@ spec:
       containers:
       - name: greeting-service
         image: mini-mesh-greeting-service:latest
+        imagePullPolicy: IfNotPresent
         env:
         - name: GREETING_MESSAGE
           valueFrom:
