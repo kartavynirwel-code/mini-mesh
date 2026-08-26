@@ -19,7 +19,7 @@ pipeline{
 
                 dir('frontend') {
                     sh """
-                    docker build -tt mini-mesh-frontend:${Tag} .
+                    docker build -t mini-mesh-frontend:${Tag} .
                     docker push \$DOCKER_USER/mini-mesh-frontend:${Tag}
                     """
                 }
