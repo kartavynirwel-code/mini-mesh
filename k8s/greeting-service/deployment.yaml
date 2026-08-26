@@ -8,14 +8,16 @@ spec:
   selector:
     matchLabels:
       app: greeting-service-pod
+      role: greeting
   template:
     metadata:
       labels:
         app: greeting-service-pod
+        role: greeting
     spec:
       containers:
       - name: greeting-service
-        image: mini-mesh-greeting-service:latest
+        image: kartavyanirwel/mini-mesh-greeting-service:latest
         imagePullPolicy: IfNotPresent
         env:
         - name: GREETING_MESSAGE
