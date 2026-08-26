@@ -2,7 +2,7 @@ pipeline{
     agent any
 
     environment {
-        Tag=${env.BUILD_NUMBER}
+    Tag = "${env.BUILD_NUMBER}"
     }
 
     stages{
