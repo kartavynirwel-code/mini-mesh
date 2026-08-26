@@ -64,9 +64,9 @@ pipeline{
                     cd mini-mesh-manifest
 
                     sed -i 's/mini-mesh-frontend:.*/mini-mesh-frontend:${Tag}/' frontend/deployment.yaml
-                    sed -i 's/mini-mesh-greeting-service:.*/mini-mesh-greeting-service:${Tag}/' services/greeting-service/deployment.yaml
-                    sed -i 's/mini-mesh-user-service:.*/mini-mesh-user-service:${Tag}/' services/user-service/deployment.yaml
-                    sed -i 's/mini-mesh-notification-service:.*/mini-mesh-notification-service:${Tag}/' services/notification-service/deployment.yaml
+                    sed -i 's/mini-mesh-greeting-service:.*/mini-mesh-greeting-service:${Tag}/' greeting-service/deployment.yaml
+                    sed -i 's/mini-mesh-user-service:.*/mini-mesh-user-service:${Tag}/' user-service/deployment.yaml
+                    sed -i 's/mini-mesh-notification-service:.*/mini-mesh-notification-service:${Tag}/' notification-service/deployment.yaml
                     git config --global user.email "kartavyanirwell@gmail.com"
                     git config --global user.name "Kartavynirwel-code"
 
