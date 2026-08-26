@@ -19,28 +19,28 @@ pipeline{
 
                 dir('frontend') {
                     sh """
-                    docker build -t mini-mesh-frontend:${Tag} .
+                    docker build -t kartavyanirwel/mini-mesh-frontend:${Tag} .
                     docker push \$DOCKER_USER/mini-mesh-frontend:${Tag}
                     """
                 }
 
                 dir('services/greeting-service') {
                     sh """
-                    docker build -t mini-mesh-greeting-service:${Tag} .
+                    docker build -t kartavyanirwel/mini-mesh-greeting-service:${Tag} .
                     docker push \$DOCKER_USER/mini-mesh-greeting-service:${Tag}
                     """
                 }
             
                 dir('services/user-service') {
                     sh """
-                    docker build -t mini-mesh-user-service:${Tag} .
+                    docker build -t kartavyanirwel/mini-mesh-user-service:${Tag} .
                     docker push \$DOCKER_USER/mini-mesh-user-service:${Tag}
                     """
                 }
             
                 dir('services/notification-service') {
                     sh """
-                    docker build -t mini-mesh-notification-service:${Tag} .
+                    docker build -t kartavyanirwel/mini-mesh-notification-service:${Tag} .
                     docker push \$DOCKER_USER/mini-mesh-notification-service:${Tag}
                     """
                 }
