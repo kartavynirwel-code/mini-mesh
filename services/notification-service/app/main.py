@@ -16,6 +16,8 @@ from datetime import datetime, timezone
 
 from fastapi import FastAPI
 from pydantic import BaseModel, Field
+from prometheus_fastapi_instrumentator import Instrumentator
+
 
 # --- Logging setup -----------------------------------------------------
 # We configure a named logger (not the root logger) and log to stdout.
@@ -29,6 +31,8 @@ logging.basicConfig(
 logger = logging.getLogger("notification-service")
 
 app = FastAPI(title="notification-service", version="1.0.0")
+
+Instrumentator().instrument(app).expose(app)
 
 
 # --- Request/response models --------------------------------------------
