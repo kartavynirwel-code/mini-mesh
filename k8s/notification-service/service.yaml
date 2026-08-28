@@ -8,7 +8,7 @@ spec:
   selector:
     app: notification-service-pod
   ports:
-    - name: http
+    - name: metrics
       protocol: TCP
       port: 8000
       targetPort: 8000
