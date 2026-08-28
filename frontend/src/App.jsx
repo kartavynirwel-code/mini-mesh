@@ -53,7 +53,7 @@ function App() {
   return (
     <div style={styles.container}>
       <div style={styles.card}>
-        <h1 style={styles.title}>Mini-Mesh</h1>
+        <h1 style={styles.title}>Mini-Mesh-2.0</h1>
         <p style={styles.subtitle}>
           Frontend &rarr; greeting-service &rarr; user-service &rarr; notification-service
         </p>
